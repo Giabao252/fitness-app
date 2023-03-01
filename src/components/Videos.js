@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
-const Videos = ({ exerciseVideos, name }) => {
+const Videos = ({ Videos, name }) => {
   return (
     <Box sx={{ marginTop: { lg: "203px", xs: "20px" } }} p="20px">
       <Typography
@@ -22,7 +22,7 @@ const Videos = ({ exerciseVideos, name }) => {
         flexWrap="wrap"
         alignItems="center"
       >
-        {exerciseVideos.slice(0, 6).map((item, index) => (
+        {Videos?.slice(0, 6)?.map((item, index) => (
           <a
             key={index}
             className="exercise-video"
